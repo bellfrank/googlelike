@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            h2 {
+                color: red;
+                font-family: Arial, sans-serif;
+                border-bottom: 1px solid lightgrey;
+                
+            }
+            
+            input {
+                border: 1px solid #d9d9d9;
+                border-radius: 1px;
+                border-top: 1px solid #c0c0c0;
+                height: 25px;
+                padding: 1px 8px;
+                margin-bottom: 8px;
+
+                
+            }
+                
+            form {
+                font-size: 13px;
+            }
+                
+
+
+            #home {
+                font-family: arial, sans-serif;
+                font-size: 13px;
+                position: absolute;
+                top: 8px;
+                right: 16px;
+            }
+            #images {
+                font-family: arial, sans-serif;
+                font-size: 13px;
+                position: absolute;
+                top: 8px;
+                right: 120px;
+            }
+
+            .submit {
+                background-color: #4d90fe;
+                background-image: -webkit-linear-gradient(top, #4d90fe,#4787ed);
+                border: 1px solid #3079ed;
+                color: #fff;
+                border-radius: 2px;
+                font-weight: bold;
+                font-size: 11px;
+                margin: 10px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <a id ="home" href="google.html">Google Search</a>
+        <a id ="images" href="googleimages.html">Image Search</a>
+        
+        <h2>Advanced Search</h2>
+
+        <form action="https://google.com/search" autocomplete="off" a>
+            
+            
+        <div>
+            <label> all these words:</label>
+            <input type="text" name="q" autofocus>
+        </div>
+        <div>
+            <label>this exact word or phrase:</label>
+            <input type="text" name="as_epq">
+        </div>
+        <div>
+            <label>any of these words:</label> 
+            <input type="text" name="as_oq">
+        </div>
+        <div>
+            <label>none of these words:</label> 
+            <input type="text" name="as_eq">
+        </div>
+
+        <input class="submit" type="submit" value="Advanced Search" style="-webkit-user-select:none;
+        user-select:none;line-height:100%;height:30px;min-width:120px">
+
+        </form>
+
+        
+    </body>
+</html>
+
